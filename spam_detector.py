@@ -29,7 +29,7 @@ print ("Classification rate for NB:", model.score(Xtest, Ytest))
 
 from sklearn.ensemble import AdaBoostClassifier
 
-#fitting the model 1 --- AdaBoost Classifier
+#fitting the model 2 --- AdaBoost Classifier
 model1 = AdaBoostClassifier()
 model.fit(Xtrain, Ytrain)
 print ("Classification rate for Adaboost:", model.score(Xtest, Ytest))
