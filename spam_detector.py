@@ -21,14 +21,15 @@ Ytrain = Y[:-100,]
 Xtest = X[-100:,]
 Ytest = Y[-100:,]
 
-#fitting the model
+#fitting the model 1 --- Naive Bayes Classifier
 model = MultinomialNB()
 model.fit(Xtrain, Ytrain)
 print ("Classification rate for NB:", model.score(Xtest, Ytest))
 
-############ you can use any model ###########
+
 from sklearn.ensemble import AdaBoostClassifier
 
+#fitting the model 1 --- AdaBoost Classifier
 model1 = AdaBoostClassifier()
 model.fit(Xtrain, Ytrain)
 print ("Classification rate for Adaboost:", model.score(Xtest, Ytest))
