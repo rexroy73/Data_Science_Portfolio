@@ -39,8 +39,8 @@ tokens = [t for t in tokens if t not in stopwords]
 
 #getting frequency count of tokens 
 freq = nltk.FreqDist(tokens)
-for key,val in freq.items():
-    print (str(key) + ':' + str(val))
+for word, frequency in freq.most_common(50):
+    print(u'{} : {}'.format(word, frequency))
 
 #top words frequency plot
 freq.plot(25, cumulative=False)
